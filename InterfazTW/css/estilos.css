@@ -1,0 +1,189 @@
+{
+	margin:0px; /*margen hacia afuera*/
+	padding:0px; /*margen hacia adentro*/
+}
+
+header{
+	width: 25%; /*ancho de un elemento*/
+	height: 700px; /*altura de un elemento*/ 
+	position: relative;
+	float: left;
+	padding: 50px;
+	box-sizing: border-box;
+	/*background-color: blue;*/
+	}
+	#logo{
+		width: 100%;
+		height: 50px;
+		padding: 5px;
+		/*background-color: pink;*/
+	}
+		#logo>img{
+			height:100%;
+		}
+	nav{
+		width: calc(100%-350px);
+	}
+	ul{
+		height: 100%;
+		list-style:none;
+	}
+	li{
+		position:relative;
+		box-sizing: border-box;
+		font-size: 20px;
+		padding: 10px 0px;
+	}
+	li>img{
+		height: 30px;
+		padding-right: 10px;
+	}
+	.Usuario{
+		width: 35px;
+		height: 30px;
+		padding-top: 0px;
+		border-radius: 50%;
+		position: relative;
+		float: left;
+		background-color: red;
+		overflow: hidden; 
+		text-align: center;
+	}
+	.Usuario>img{
+		width: 150%;
+	}
+
+#Inicio{
+	width: 45%;
+	height: 700px;
+	position:relative;
+	float: left;
+	box-sizing: border-box;
+	/*background-color: yellow;*/
+}
+	#Inicio>h2{
+		width: 100%;
+		height: 30px;
+		position: relative;
+		float: left;
+		padding: 10px 10px;
+		/*background-color: green;*/
+	}
+	h2>img{
+		height: 30px;
+		position: relative;
+		float: right;
+		padding-right: 100px;
+		/*background-color: black;*/
+	}
+	#Inicio>.publicaciones-tu{
+		width: 100%;
+		height: 100px;
+		position: relative;
+		float: left;
+		padding: 10px 10px;
+		/*background-color: purple;*/
+	}
+		.publicaciones-tu>img>p{
+			height: 35px;
+		}
+		.publicaciones-tu>p{
+			font-size: 20px;
+		}
+		#Inicio>.reacciones-tu{
+			padding: 30px 20px;
+			height: 40px;
+		}
+		.reacciones-tu>img{
+			width: 25px;
+			padding-right: 10px;
+		}
+		.publicaciones-tu>button{
+			position: relative;
+			float: right;
+			background-color: #3498db;
+			border-radius: 10px;
+		}
+		.publicaciones-tu>button>b{
+			color: white;
+		}
+	.Reacciones>img{
+		padding-right: 50px;
+		height: 20px;
+	}
+	#publimagen>img{
+		width: 200px;
+		height: 150px;
+	}
+	.publicaciones>p>b{
+		color: blue;
+	}
+
+#Intereses{
+	width: 30%;
+	height: 700px;
+	position:relative;
+	float: left;
+	box-sizing: border-box;
+	background-color: beige;
+}
+	.buscar{
+		height: 30px;
+		width: 100%;
+	}
+	.buscar>p{
+		position: relative;
+		text-align: left;
+		padding-left: 10px;
+	}
+	.buscar>p>img{
+		width: 10px;
+		height: 10px;
+		padding-right: 10px;
+	}
+
+	.parati{
+		height: 40px;
+		width: 100%;
+	}
+	.parati>h1{
+		position: relative;
+		text-align: left;
+		padding-left: 10px;
+	}
+	.parati>h1>img{
+		width: 20px;
+		height: 20px;
+		padding-left: 40px;
+	}
+
+	#Intereses>.tendencias{
+		width: 80%;
+	}
+	#Intereses>.tendencias>h4{
+		color: gray;
+	}
+	#Intereses>.tendencias>h3{
+		color: black;
+	}
+		#Intereses>.tendencias>.ver{
+			width: 70%;
+			position: relative;
+			float: left;
+			padding-left: 10px;
+			border-radius: 10px;
+		}
+
+		.imagenb>img{
+			width: 70px;
+			height: 75px;
+			position: relative;
+			float: right;
+			
+		}
+#Intereses>h3{
+	color: #3498db;
+}
+#Intereses>h1{
+ color: black;
+}

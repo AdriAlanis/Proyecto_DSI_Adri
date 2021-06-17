@@ -1,0 +1,132 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Krona One', sans-serif;
+}
+
+:root{
+	--azulClaro: #48dbfb;
+	--negro: #222f3e;
+	--morado: #e056fd;
+	--blanco: #c8d6e5;
+	--gris: rgba(87, 101, 116, .2);
+}
+
+#calculadora{
+	background: var(--negro);
+	width: 400px;
+	height: 800px;
+	position: fixed;
+	top: 50%;
+	margin-top: -400px;
+	left: 50%;
+	margin-left: -200px;
+	border-radius: 25px;
+	overflow: hidden;
+}
+.claro{
+	background: var(--gris) !important;
+}
+.oscuro{
+	background: var(--negro);
+}
+.tclaro{
+	color: var(--negro) !important;
+}
+.toscuro{
+	color: var(--blanco) !important;
+}
+#pantalla{
+	width: 100%;
+	height: 300px;
+	position: relative;
+	float: left;
+	text-align: right;
+	padding: 0px 25px;
+	box-sizing: border-box;
+}
+	#pantalla1{
+	width: 100%;
+	position: relative;
+	float: left;
+	margin-top: 180px;
+	color: var(--blanco);
+	font-size: 25px;
+	}
+	#pantalla2{
+	width: 100%;
+	font-size: 25px;
+	color: var(--gris);
+	position: relative;
+	float: left;
+	}	
+	.modo{
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	height: 40px;
+	background: var(--gris);
+	border-radius: 10px;
+	}
+		.modo>button{
+		width: 50%;
+		position: relative;
+		float: left;
+		background: none;
+		border: none;
+		line-height: 40px;
+		font-size: 20px;
+		color: rgba(255, 255, 255, .1);
+		cursor: pointer;
+		}
+		.activo{
+			color: rgba(255, 255, 255, .1);
+		}
+.botones{
+	width: 100%;
+	background: var(--gris);
+	height: 500px;
+	position: relative;
+	float: left;
+	border-radius: 45px 45px 0px 0px;
+	padding-right: 20px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+	.boton{
+		position: relative;
+		float: left;
+		width: 80px;
+		height: 80px;
+		margin-left: 13px;
+		margin-top: 15px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 80px;
+		font-size: 30px
+		color: var(--blanco);
+		font-weight: 100;
+		background: var(--gris);
+	}
+	.sinmargen{
+		margin-left: 0px !important;
+	}
+	.operador{
+		color: var(--azulClaro) !important;
+	}
+	.borrar{
+		color: var(--morado) !important;
+	}
+	.x
+	{
+
+		background: none !important;
+	}
+	#igual{
+		background: var(--azulClaro) !important;
+		color: var(--blanco) !important;
+		font-weight: 300;
+	}

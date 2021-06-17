@@ -1,0 +1,175 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root{
+	/*COLORES*/
+	--verde: #12CBC4;
+	--azul: #1289A7;
+	--morado: #6F1E51;
+	--blanco: #f1f2f6;
+	--negro: #2f3542;
+
+	/*TAMAÑO LETRAS*/
+	--titulo: 30px;
+	--subtitulo: 20px;
+	--parrafo: 15px;
+}
+
+header{
+	background: var(--azul);
+	width: 100%;
+	height: 70px;
+	position: relative;
+	float: left;
+	line-height: 70px; /*preguntar como funciona*/
+
+}
+	h6{
+		font-size: var(--subtitulo);
+		position: relative;
+		float: left;
+		color: var(--blanco);
+		margin-left: 30px;
+	}
+		a{
+			text-decoration: none; /*Preguntar como funciona*/
+			color: var(--blanco);
+			transition: .2s all;
+		}
+		a:hover{ /*preguntar para que sirve*/
+			cursor: pointer;
+			color: var(--morado);
+		}
+		.actual{
+			text-decoration: underline;
+			color: var(--verde);
+			font-weight: 500;
+		}
+	.menu{
+		position:relative;
+		float: right;
+		font-size: var(--subtitulo);
+		color: var(--blanco);
+		font-weight: 200;
+		margin-right: 30px;
+		line-height: 70px !important;
+		display: none !important; /*oculta el elemento*/
+	}
+	.menu-lado{
+		position: fixed;
+		right: -200px; /*lo ocultaremos sacándolo de la vista*/
+		top: 70px;
+		background: var(--azul);
+		height: 100%;
+		width: 200px;
+		z-index: 1; /*da importancia de lugar hacia enfrente*/
+	}
+	.menu-lado>div{
+		position: relative;
+		float: left;
+		width: 100%;
+		height: 40px;
+		padding-left: 10px;
+		margin-bottom: 10px;
+		line-height: 40px;
+	}
+h1{
+	font-size: var(--titulo);
+	color: var(--morado);
+	text-align: center;
+	margin-top: 30px;
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.contenedor{
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 20px;	
+	box-sizing: border-box;
+}
+.ficha{
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 250px;
+	background: var(--blanco);
+	border-radius: 10px 10px 0px 0px;
+	margin-left: 20px;
+	overflow: hidden; /*preguntar para que sirve*/
+	transition: .2s all; /*preguntar para que sirve*/
+	box-sizing: border-box;
+}
+.ficha:hover{ /*preguntar para que sirve*/
+	cursor: pointer;
+	/*box-shadow: 0px 0px 30px 1px var(--verde); preguntar para que sirve*/
+	border: 5px solid var(--verde);
+}
+	.imgficha{
+		width: 100%;
+		height: 150px; 
+		position: relative;
+		float: left;
+	}
+		.imgficha>img{
+			height: 100%;
+		}
+	.info{
+		padding-left: 15px;
+		box-sizing: border-box;
+		position: relative;
+		float: left;
+	}
+	h3{
+		font-size: var(--subtitulo);
+		color: var(--morado);
+		margin-bottom: 15px;
+	}
+	p{
+		font-size: var(--parrafo);
+		color: var(--negro);
+	}
+	p>i{
+		color: var(--morado);
+		margin-right: 10px;
+	}
+/*Escritorio*/
+@media only screen and (min-width: 960px){
+	.ficha{ width: 180px; }
+}
+@media only screen and (min-width: 1060px){
+	.ficha{ width: 200px; }
+	.contenedor{ padding-left: 50px; padding-right: 50px; }
+}
+@media only screen and (min-width: 1260px){
+	.contenedor{ padding-left: 100px; padding-right: 100px; }
+}
+@media only screen and (min-width: 1360px){
+	.ficha{ width: 220px; }
+	.contenedor{ padding-left: 150px; padding-right: 150px; }
+}
+@media only screen and (min-width: 1460px){
+	.contenedor{ padding-left: 200px; padding-right: 200px; }
+}
+/*Movil*/
+@media only screen and (max-width: 959px){
+	.ficha{ width: 100%; }
+	.imgficha{ overflow: hidden; }
+	.contenedor{ 
+		display: block; /*preguntar para que es*/
+		padding-left: 40px; 
+		padding-right: 40px; }
+}
+/**********************************/
+	header>ul{
+		display: none; /*ocultara el menú que esta por defecto*/
+	}
+	.menu{
+		display: block!important;/*mostrará el menú de hamburguesa*/
+	}
